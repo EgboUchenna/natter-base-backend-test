@@ -1,0 +1,19 @@
+{
+  "name": "natter-base",
+  "version": "1.0.0",
+  "description": "A simple API to solve common problems with objects and arrays of data using a given sets of rules.",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "javascript",
+    "express",
+    "node."
+  ],
+  "author": "Egbo Uchenna <egbouchenna001@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
