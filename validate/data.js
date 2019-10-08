@@ -4,19 +4,19 @@
  */
 
 module.exports = function validateData(data, rules) {
-  const errors = {};
+  const outputs = {};
+  const missingItems = [];
 
   if (Object.keys(data).length < 1)
-    return (errors.message = 'Object cannot be empty.');
-
-  const missingItem = [];
+    return (outputs.message = 'Object cannot be empty.');
 
   for (const rule of rules) {
     if (!data.hasOwnProperty(rule)) {
       missingItems.push(rule);
     }
   }
-  return !missingItem.length
+  return !missingItems.length
     ? 'valid'
-    : (errors.missingItems = missingItem.join());
+    : (outputs.missingItems = missingItems.join());
 };
+
