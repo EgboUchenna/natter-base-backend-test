@@ -1,14 +1,13 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import validateRoute from './routes/api/data';
-import removeInputRoute from './routes/api/input';
-import aladdinRoute from './routes/api/aladdin';
+const express = require('express');
+const bodyParser = require('body-parser');
+const validateRoute = require('./routes/api/data');
+const removeInputRoute = require('./routes/api/input');
+const aladdinRoute = require('./routes/api/aladdin');
 
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-
 
 app.use('/api', validateRoute);
 app.use('/api', aladdinRoute);
@@ -19,6 +18,8 @@ app.use('/', (req, res) => {
 });
 
 const port = process.env.PORT || 8000;
-app.listen(port, () =>
+app.listen(port,
+  () =>
   console.log(`Server running on http://localhost:${port}`)
 );
+module.exports = app;

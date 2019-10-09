@@ -1,5 +1,5 @@
-import validateData from '../validate/data';
-import express from 'express';
+const validateData = require('../validate/data');
+
 /**
  * @route   POST api/validate
  * @desc    Tests data Object route
@@ -14,4 +14,4 @@ const validate = (req, res) => {
   return res.status(200).send({ output });
 };
 
-export default validate;
+module.exports = validate;

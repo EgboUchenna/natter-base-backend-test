@@ -1,6 +1,4 @@
-const express = require('express');
-
-import validateInput from '../validate/input';
+const validateInput = require('../validate/input');
 
 /**
  * @route   Delete api/removeInput
@@ -17,4 +15,4 @@ const removeInput = (req, res) => {
   return res.status(200).send({ output });
 };
 
-export default removeInput;
+module.exports = removeInput;
