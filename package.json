@@ -4,7 +4,7 @@
   "description": "A simple API to solve common problems with objects and arrays of data using a given sets of rules.",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node server.js",
     "test": "jest"
   },
   "keywords": [
