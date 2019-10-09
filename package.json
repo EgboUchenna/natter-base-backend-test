@@ -4,7 +4,7 @@
   "description": "A simple API to solve common problems with objects and arrays of data using a given sets of rules.",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon -r esm app.js"
   },
   "keywords": [
     "javascript",
@@ -14,6 +14,8 @@
   "author": "Egbo Uchenna <egbouchenna001@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "esm": "^3.2.25",
     "express": "^4.17.1"
   }
 }
