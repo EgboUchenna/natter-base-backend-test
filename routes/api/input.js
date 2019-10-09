@@ -1,8 +1,9 @@
-import { Router } from 'express';
-const router = Router();
+const express = require('express');
 
-import removeInput from '../../controllers/input';
+const router = express.Router();
+
+const removeInput = require('../../controllers/input');
 
 router.delete('/:item', removeInput);
 
-export default router;
+module.exports = router;

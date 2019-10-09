@@ -1,9 +1,9 @@
-import { Router } from 'express';
+const express = require('express');
 
-import aladdinTravel from '../../controllers/aladdin';
+const aladdinTravel = require('../../controllers/aladdin');
 
-const router = Router();
+const router = express.Router();
 
-router.get('/aladdin', aladdinTravel);
+router.post('/aladdin', aladdinTravel);
 
-export default router;
+module.exports = router;

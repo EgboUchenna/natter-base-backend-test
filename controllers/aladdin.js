@@ -1,6 +1,5 @@
-import express from 'express';
 /**
- * @route   GET api/aladdin
+ * @route   POST api/aladdin
  * @desc    Calculates Aladdin's travel.
  * @access  Public
  */
@@ -46,4 +45,4 @@ const aladdinTravel = (req, res) => {
   res.send({ output });
 };
 
-export default aladdinTravel;
+module.exports = aladdinTravel;

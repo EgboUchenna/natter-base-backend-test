@@ -1,9 +1,9 @@
-import { Router } from 'express';
+const express = require('express');
 
-import validate from '../../controllers/data.js';
+const validate = require('../../controllers/data.js');
 
-const router = Router();
+const router = express.Router();
 
 router.post('/validate', validate);
 
-export default router;
+module.exports = router;
