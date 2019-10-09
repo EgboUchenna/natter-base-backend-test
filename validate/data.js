@@ -7,6 +7,10 @@ module.exports = function validateData(data, rules) {
   const outputs = {};
   const missingItems = [];
 
+  if (!Array.isArray(rules) || !rules.length) {
+    return (outputs.isEmpty = 'Rules cannot be empty');
+  }
+
   if (Object.keys(data).length < 1)
     return (outputs.message = 'Object cannot be empty.');
 
@@ -19,4 +23,3 @@ module.exports = function validateData(data, rules) {
     ? 'valid'
     : (outputs.missingItems = missingItems.join());
 };
-
