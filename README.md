@@ -1,4 +1,4 @@
-# NatterBase Backend Developer Test
+# NatterBase Backend Developer Test    [![CircleCI](https://circleci.com/gh/EgboUchenna/natter-base-backend-test.svg?style=svg)](https://circleci.com/gh/EgboUchenna/natter-base-backend-test)
 
 This test is for the role of a Backend Node.JS Developer at Natterbase Limited.
 
