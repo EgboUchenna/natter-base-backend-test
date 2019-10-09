@@ -13,9 +13,8 @@ app.use('/api', validateRoute);
 app.use('/api', aladdinRoute);
 app.use('/api/remove', removeInputRoute);
 
-app.use('/', (req, res) => {
+app.get('/', (req, res) => {
   res.status(200).send('Welcome to the Natter Base API.');
 });
-
 
 module.exports = app;
