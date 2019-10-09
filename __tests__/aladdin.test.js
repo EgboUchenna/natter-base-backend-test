@@ -54,8 +54,6 @@ describe("Aladdin's Endpoint", () => {
         magic: [11, 3, 2, 5, 4, 8],
         distance: [19, 12, 3, 14, 2, 7]
       });
-    console.log(body);
-
     expect(body).toMatchObject({ output: 4 });
   });
 });
